@@ -4,9 +4,11 @@ import ProductCard from "../components/ProductCard";
 import styled from "styled-components";
 import { useEffect, useState } from "react";
 import { mockTheme1Produdcts, mockTheme2Produdcts } from "../data/mockData";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const [products, setProducts] = useState();
+  const navigate = useNavigate();
 
   // 테마 버튼 클릭 Event
   const onClickThemeButton = (themeId) => {
@@ -44,6 +46,7 @@ const Home = () => {
         {products ? (
           products.map((product) => (
             <ProductCard
+              onClick={() => navigate(`product/${product.id}`)}
               key={product.id}
               name={product.name}
               description={product.description}

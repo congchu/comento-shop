@@ -17,6 +17,10 @@ const ProductDetail = () => {
   return (
     <ProductDetailStyled>
       <Navigation />
+      {/* TODO: 삼항연산자 라는 단어로 찾아보시면 됩니다!! */}
+      {/* {조건 ? true : false} */}
+      {/* {조건 && true} */}
+      {/* {조건1 && 조건2 && true} */}
     </ProductDetailStyled>
   );
 };

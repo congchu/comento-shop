@@ -49,3 +49,10 @@ export const mockTheme2Produdcts = [
       "https://raw.githubusercontent.com/congchu/coment-shop-server/master/assets/images/product6.jpg",
   },
 ];
+
+// 이 부분은 Copy 해서 쓰시면 됩니다!
+export const getProductDetail = (productId) => {
+  return [...mockTheme1Produdcts, ...mockTheme2Produdcts].find((product) => {
+    return product.id === Number(productId);
+  });
+};

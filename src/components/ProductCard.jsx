@@ -22,6 +22,7 @@ const ProductThumbnail = styled.div`
   height: 204px;
   background-size: cover;
   background-position: center;
+  margin-bottom: 12px;
 `;
 const ProductName = styled.div`
   font-weight: 700;

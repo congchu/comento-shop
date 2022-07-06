@@ -2,7 +2,7 @@ import Navigation from "../components/Navigation";
 import ThemeButton from "../components/ThemeButton";
 import ProductCard from "../components/ProductCard";
 import styled from "styled-components";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { mockTheme1Produdcts, mockTheme2Produdcts } from "../data/mockData";
 
 const Home = () => {
@@ -16,6 +16,13 @@ const Home = () => {
       setProducts(mockTheme2Produdcts);
     }
   };
+
+  useEffect(() => {
+    // 1초 후, 상품 초기화
+    setTimeout(() => {
+      setProducts(mockTheme1Produdcts);
+    }, 1000);
+  }, []);
 
   return (
     <div>

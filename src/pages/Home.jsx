@@ -29,7 +29,7 @@ const Home = () => {
   return (
     <div>
       <div>
-        <Navigation />
+        <Navigation name="코멘토 쇼핑" />
         <ThemeSection>
           <ThemeButton
             themeName={"#따순머그컵"}

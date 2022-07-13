@@ -21,7 +21,7 @@ const ProductDetail = () => {
   };
   return (
     <Container>
-      <Navigation />
+      <Navigation name="코멘토 쇼핑" hasBack={true} />
       {product && (
         <main>
           <MainImage

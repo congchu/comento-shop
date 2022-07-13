@@ -1,14 +1,18 @@
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
 
-const Navigation = () => {
+const Navigation = ({ name, hasBack }) => {
+  const navigate = useNavigate();
   return (
     <NavigationStyled>
-      <div> 코멘토 쇼핑</div>
+      {hasBack && <BackButton onClick={() => navigate(-1)}>{`<`}</BackButton>}
+      <div onClick={() => navigate("/")}> {name}</div>
     </NavigationStyled>
   );
 };
 
 const NavigationStyled = styled.div`
+  position: relative;
   padding: 20px;
   font-weight: 700;
   font-size: 18px;
@@ -18,5 +22,9 @@ const NavigationStyled = styled.div`
   justify-content: center;
   border-bottom: solid 1px #eeeeee; ;
 `;
-
+const BackButton = styled.div`
+  position: absolute;
+  left: 0px;
+  cursor: pointer;
+`;
 export default Navigation;

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const BasketItem = ({ thumbnail, name, price, onClickRemoveButton }) => {
+const BasketItem = ({ thumbnail, name, price, onRemoveItem }) => {
   return (
     <>
       <BasketItemStyled>
@@ -12,7 +12,7 @@ const BasketItem = ({ thumbnail, name, price, onClickRemoveButton }) => {
               <div>{price}원</div>
             </ColumnLayout>
           </RowLayout>
-          <CloseButton onClick={onClickRemoveButton}>X</CloseButton>
+          <CloseButton onClick={onRemoveItem}>X</CloseButton>
         </RowLayout>
       </BasketItemStyled>
       <GrayLine />

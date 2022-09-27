@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/comento-shop/static/css/main.81add837.css",
+    "main.js": "/comento-shop/static/js/main.4855d071.js",
+    "index.html": "/comento-shop/index.html",
+    "main.81add837.css.map": "/comento-shop/static/css/main.81add837.css.map",
+    "main.4855d071.js.map": "/comento-shop/static/js/main.4855d071.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.81add837.css",
+    "static/js/main.4855d071.js"
+  ]
+}
